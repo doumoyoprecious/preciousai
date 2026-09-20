@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --brand-primary: #18181b;
+  --brand-primary-text: #ffffff;
+  --brand-primary-hover: #27272a;
+  --brand-primary-subtle: rgba(24, 24, 27, 0.08);
+  --brand-primary-ring: rgba(24, 24, 27, 0.35);
+  --brand-primary-border: rgba(24, 24, 27, 0.25);
+}
+
+.brand-btn-primary {
+  background-color: var(--brand-primary) !important;
+  color: var(--brand-primary-text) !important;
+  transition: all 0.15s ease-in-out;
+}
+
+.brand-btn-primary:hover:not(:disabled) {
+  background-color: var(--brand-primary-hover) !important;
+  filter: brightness(0.96);
+}
+
+.brand-btn-primary:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+.brand-accent-text {
+  color: var(--brand-primary) !important;
+}
+
+.brand-accent-bg {
+  background-color: var(--brand-primary) !important;
+  color: var(--brand-primary-text) !important;
+}
+
+.brand-accent-subtle {
+  background-color: var(--brand-primary-subtle) !important;
+  color: var(--brand-primary) !important;
+}
+
+.brand-nav-selected {
+  background-color: var(--brand-primary) !important;
+  color: var(--brand-primary-text) !important;
+}

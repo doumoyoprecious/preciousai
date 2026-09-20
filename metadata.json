@@ -1,0 +1,6 @@
+{
+  "name": "Precious AI",
+  "description": "Trainable personal AI assistant for Precious Doumoyo featuring RAG, Admin Training Chat, corrections, personality tuning, and audit controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
